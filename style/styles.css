@@ -1,0 +1,34 @@
+ul{
+    list-style: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}body{
+    margin: 0;
+}
+.navbar {
+  height: 5vh;
+  padding: .5em;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+}
+.icon{
+    height: 5vh;
+    width: 5vh;
+}
+.footer {
+  height: 10vh;
+}
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+}
+.left-items,
+.right-items{
+    gap: 1em;
+    display: flex;
+    align-items: center;
+}
+
