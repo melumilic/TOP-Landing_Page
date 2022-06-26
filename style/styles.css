@@ -1,4 +1,4 @@
-@import url("http://fonts.cdnfonts.com/css/roboto");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -8,9 +8,12 @@
 ul {
   list-style: none;
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
+  color: white;
 }
 body {
   margin: 0;
@@ -21,9 +24,30 @@ body {
 .bg-secondary {
   background-color: #3882f6;
 }
+.bg-light-6{
+  background-color: rgb(242,242,247);
+}
+.bg-dark-1{
+  background-color: rgb(142,142,147)
+}
+.bg-dark-2{
+  background-color: rgb(99,99,102)
+}
+.bg-dark-3{
+  background-color: rgb(72,72,74)
+}
+.bg-dark-4{
+  background-color: rgb(58,58,60)
+}
+.bg-dark-5{
+  background-color: rgb(44,44,46)
+}
+.bg-dark-6{
+  background-color: rgb(28,28,30)
+}
 .navbar {
   width: 100%;
-  height: 5vh;
+  height: 4em;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
@@ -56,30 +80,35 @@ body {
 }
 .container {
   max-width: 2000px;
-  width: 1500px;
+  width: 80em;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 1em;
-  min-width: 0;
+  overflow: hidden;
+}
+.container-sm {
+  max-width: 1500px;
+  width: 65em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
   overflow: hidden;
 }
 .row {
   flex: 1;
   display: flex;
   justify-content: center;
-
-  min-width: 0;
+  gap: 16px;
   overflow: hidden;
 }
 .col {
   flex: 1;
-  min-width: 0;
-  min-height: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
 }
 .left-items,
 .right-items {
@@ -92,7 +121,6 @@ body {
     justify-content: flex-end;
 }
 h1 a {
-  color: black;
   font-size: 24px;
 }
 .hero-main-text {
@@ -107,22 +135,62 @@ h1 a {
   font-size: 18px;
   color: #e5e7eb;
 }
+.information-header{
+  color: white;
+  font-weight: bolder;
+  font-size: 36px;
+}
+
 .button {
+  border: none;
+  border-radius: 8px;
   padding: 8px 16px;
   flex: 0 1 auto;
   width: 100px;
+  color: white;
+  font-size: 16px;
+  font-weight: bolder;
 }
 .hero-img {
   display: flex;
-  width: 100px;
-
+  flex: 1;
+  width: 40em;
+  height:auto;
   overflow: hidden;
-  min-width: 0;
 }
 .entry {
-
-  height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 2em 0;
+}
+.entry-1{
+  padding:3em
 }
 .full-width{
   width: 100%;
+}
+.center{
+  align-items: center;
+  justify-content: center;
+}
+.square-rounded-container{
+  border-radius: 16px;
+  border: rgb(207, 176, 0);
+  border-width: 2px;
+  border-style: solid;
+  width: 200px;
+  height: 200px;
+}
+img{
+  object-fit: cover;
+}
+.card{
+  text-align: center;
+  max-width: 15em;
+}
+.gap-16{
+  gap: 16px;
+}
+.gap-32{
+  gap: 32px;
 }
