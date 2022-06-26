@@ -66,9 +66,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eee;
   padding: 0.5em;
   font-size: 14px;
+  color: #eee;
 }
 .footer .container {
   justify-content: center;
@@ -200,7 +200,7 @@ img{
 .gap-32{
   gap: 32px;
 }
-.right-align{
+.right-align-self{
   align-self: flex-end;
 }
 .quote{
@@ -217,4 +217,29 @@ img{
   font-size: 24px;
   font-weight: bold;
   color: #eee;
+}
+.cta{
+  justify-content: flex-start;
+  border-radius: 8px;
+  color: #eee;
+  padding: 3em 5em;
+}
+.cta-button{
+  border-style: solid;
+  background: none;  
+}
+.left-align{
+  align-items: flex-start;
+}
+.right-justify{
+  justify-items: flex-end;
+}
+button.cta-button{
+  flex: 0 1 auto;
+  width: 100px;
+  height: fit-content;
+  padding: 8px 16px;
+}
+.bold{
+  font-weight: bold;
 }
