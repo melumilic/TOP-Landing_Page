@@ -22,7 +22,7 @@ body {
   background-color: #1d2937;
 }
 .bg-secondary {
-  background-color: #3882f6;
+  background-color: darkgoldenrod;
 }
 .bg-light-6{
   background-color: rgb(242,242,247);
@@ -243,6 +243,9 @@ button.cta-button{
   height: fit-content;
   padding: 8px 16px;
 }
-.bold{
-  font-weight: bold;
+.bolder{
+  font-weight: bolder;
+}
+.font-size-medium{
+  font-size: 24px;
 }
