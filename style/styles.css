@@ -45,6 +45,9 @@ body {
 .bg-dark-6{
   background-color: rgb(28,28,30)
 }
+.bg-dark-7{
+  background-color: black;
+}
 .navbar {
   width: 100%;
   height: 4em;
