@@ -164,7 +164,10 @@ h1 a {
   padding: 2em 0;
 }
 .entry-1{
-  padding:3em
+  padding:3em;
+}
+.entry-2{
+  padding:8em;
 }
 .full-width{
   width: 100%;
@@ -193,4 +196,22 @@ img{
 }
 .gap-32{
   gap: 32px;
+}
+.right-align{
+  align-self: flex-end;
+}
+.quote{
+  padding: 0 2em;
+}
+.quote-text{
+  font-style: italic;
+  font-size: 36px;
+  font-weight: lighter;
+  color: #eee;
+  padding-right: 1em;
+}
+.quote-name{
+  font-size: 24px;
+  font-weight: bold;
+  color: #eee;
 }
