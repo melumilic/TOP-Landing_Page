@@ -1,6 +1,10 @@
-@import url('http://fonts.cdnfonts.com/css/roboto');
-*{
-    font-family: 'Roboto', sans-serif;}
+@import url("http://fonts.cdnfonts.com/css/roboto");
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 ul {
   list-style: none;
   display: flex;
@@ -11,13 +15,19 @@ a {
 body {
   margin: 0;
 }
+.bg-primary {
+  background-color: #1d2937;
+}
+.bg-secondary {
+  background-color: #3882f6;
+}
 .navbar {
   width: 100%;
   height: 5vh;
-  padding: 0.5em;
-  background-color: #eee;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  overflow: hidden;
+  min-width: 0;
 }
 .icon {
   height: 5vh;
@@ -33,28 +43,86 @@ body {
   padding: 0.5em;
   font-size: 14px;
 }
-.footer .container{
-    justify-content: center;
+.footer .container {
+  justify-content: center;
 }
 .container-fluid {
   align-items: center;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
 }
 .container {
-  width: 80em;
+  max-width: 2000px;
+  width: 1500px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+  min-width: 0;
+  overflow: hidden;
+}
+.row {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  min-width: 0;
+  overflow: hidden;
+}
+.col {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .left-items,
 .right-items {
+    flex:1;
   gap: 1em;
   display: flex;
   align-items: center;
-  padding: .5em;
 }
-h1 a{
-    color: black;
-    font-size: 24px;
+.right-items{
+    justify-content: flex-end;
+}
+h1 a {
+  color: black;
+  font-size: 24px;
+}
+.hero-main-text {
+  flex: auto;
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+}
+.hero-secondary-text {
+  flex: auto;
+
+  font-size: 18px;
+  color: #e5e7eb;
+}
+.button {
+  padding: 8px 16px;
+  flex: 0 1 auto;
+  width: 100px;
+}
+.hero-img {
+  display: flex;
+  width: 100px;
+
+  overflow: hidden;
+  min-width: 0;
+}
+.entry {
+
+  height: 500px;
+}
+.full-width{
+  width: 100%;
 }
